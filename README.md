@@ -8,14 +8,32 @@ We present DeeLeMa, a deep learning network to analyze energies and momenta in p
 
 
 
-...
-To be filled
 
 
 
-___
+
 ## Requirements
 ```
 pip3 install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113
 ```
 
+## How to use
+To be filled
+
+
+## Citation
+```
+@article{Ban:2022hfk,
+    author = "Ban, Kayoung and Kang, Dong Woo and Kim, Tae Geun and Park, Seong Chan and Park, Yeji",
+    title = "{DeeLeMa: Missing information search with Deep Learning for Mass estimation}",
+    eprint = "2212.12836",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ph",
+    month = "12",
+    year = "2022"
+}
+```
+
+
+## Reference
+* DeeLeMa: Missing information search with Deep Learning for Mass estimation, [arXiv:2212.12836](https://arxiv.org/abs/2212.12836)
