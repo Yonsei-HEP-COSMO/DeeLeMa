@@ -2,17 +2,17 @@
 <img src="https://github.com/Yonsei-HEP-COSMO/DeeLeMa/blob/main/img/DeeLeMa.png?raw=true" width="300">
 </p>
 
-# DeeLeMa (Deep Learning for Mass estimation)
+# $\textsf{DeeLeMa}$ (Deep Learning for Mass estimation)
 
 ## Overview
 
-DeeLeMa is a deep learning network designed to analyze energies and momenta in particle collisions at high-energy colliders. Built with a foundation on symmetric event topology, DeeLeMa's generated mass distributions demonstrate robust peaks at the physical masses, even after accounting for combinatoric uncertainties and detector smearing effects. With its adaptability to different event topologies, DeeLeMa's effectiveness shines when corresponding kinematic symmetries are adopted.
+$\textsf{DeeLeMa}$ is a deep learning network designed to analyze energies and momenta in particle collisions at high-energy colliders. Built with a foundation on symmetric event topology, DeeLeMa's generated mass distributions demonstrate robust peaks at the physical masses, even after accounting for combinatoric uncertainties and detector smearing effects. With its adaptability to different event topologies, $\textsf{DeeLeMa}$'s effectiveness shines when corresponding kinematic symmetries are adopted.
 
-DeeLeMa (v1.0.0) is based on the $t\bar{t}$-like antler event topology shown in the figure below.
+$\textsf{DeeLeMa}$ (v1.0.0) is based on the $t\bar{t}$-like antler event topology shown in the figure below.
 <p align="center" style="color:gray">
 <img src="https://github.com/Yonsei-HEP-COSMO/DeeLeMa/blob/main/img/topology.png?raw=true" width="350">
     <br>
-    <m>$t\bar{t}$-production-like antler event topology</m>
+    <m>$t\bar{t}$-like antler event topology</m>
 </p>
 
 ## Requirements
@@ -84,7 +84,7 @@ source .venv/bin/activate
 
 ## Citation
 
-If DeeLeMa benefits your research, please acknowledge our efforts by citing the following paper:
+If $\textsf{DeeLeMa}$ benefits your research, please acknowledge our efforts by citing the following paper:
 
 ```bibtex
 @article{Ban:2022hfk,
@@ -104,4 +104,4 @@ If DeeLeMa benefits your research, please acknowledge our efforts by citing the 
 
 ## License
 
-DeeLeMa is released under the MIT License. For more details, see the `LICENSE` file in the repository.
+$\textsf{DeeLeMa}$ is released under the MIT License. For more details, see the `LICENSE` file in the repository.
