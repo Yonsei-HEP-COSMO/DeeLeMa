@@ -161,5 +161,6 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-data/toy_array_new.npz
-data/toy_array_preproc_test_50000.npz
+data/*.npz
+logs/*
+notes/*
