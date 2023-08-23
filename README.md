@@ -62,14 +62,6 @@ source .venv/bin/activate
     python train.py
     ```
 
---- 
-
-I've made the following improvements:
-
-1. Used the ⚠️ emoji for caution to make it visually clear.
-2. Fixed grammatical issues and made the sentences clearer.
-3. Streamlined the wording for conciseness and clarity.
-
 4. **Monitoring**:
    
    To monitor the training process, run `tensorboard`:
