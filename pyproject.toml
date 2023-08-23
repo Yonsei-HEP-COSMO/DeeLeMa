@@ -1,9 +1,11 @@
 [project]
-name = ""
-version = ""
-description = ""
+name = "DeeLeMa"
+version = "0.1.0"
+description = "Deep Learning for Mass estimation"
 authors = [
-    {name = "axect", email = "axect@outlook.kr"},
+    {name = "Tae-Geun Kim", email = "ax2ct@outlook.com"},
+    {name = "Kayoung Ban", email = "ban94gy@gmail.com"},
+    {name = "Yeji Park", email = "yeji.park.yeji@gmail.com"},
 ]
 dependencies = [
     "torch>=2.0.1",

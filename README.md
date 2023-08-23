@@ -4,21 +4,23 @@
 
 # DeeLeMa (Deep Learning for Mass estimation)
 
-We present DeeLeMa, a deep learning network to analyze energies and momenta in particle collisions at high energy colliders, especially DeeLeMa is constructed based on symmetric event topology, and the generated mass distributions show robust peaks at the physical masses after the combinatoric uncertainties, and detector smearing effects are taken into account. DeeLeMa can be widely used in different event topologies by adopting the corresponding kinematic symmetries.
+## Overview
+
+DeeLeMa is a deep learning network designed to analyze energies and momenta in particle collisions at high-energy colliders. Built with a foundation on symmetric event topology, DeeLeMa's generated mass distributions demonstrate robust peaks at the physical masses, even after accounting for combinatoric uncertainties and detector smearing effects. With its adaptability to different event topologies, DeeLeMa's effectiveness shines when corresponding kinematic symmetries are adopted.
 
 ## Requirements
 
-### 1) Pip
-To install using pip, simply run the following command:
-```
+### Using Pip
+
+```bash
 pip3 install -r requirements.txt
 ```
 
-### 2) PDM (Recommended)
+### Using PDM (Recommended)
 
-If you don't have `pdm`, you can install it as follows:
+If you haven't installed `pdm` yet:
 
-```
+```bash
 # Linux / Mac
 curl -sSL https://pdm.fming.dev/install-pdm.py | python3 -
 
@@ -26,9 +28,9 @@ curl -sSL https://pdm.fming.dev/install-pdm.py | python3 -
 (Invoke-WebRequest -Uri https://pdm.fming.dev/dev/install-pdm.py -UseBasicParsing).Content | python -
 ```
 
-Once installed, you can manage dependencies with the following commands:
+With PDM installed:
 
-```
+```bash
 # Install dependencies from pyproject.toml
 pdm install
 
@@ -36,13 +38,43 @@ pdm install
 source .venv/bin/activate
 ```
 
-## How to Use
-Details on how to use DeeLeMa will be provided soon.
+## Getting Started
+
+1. **Clone the Repository**
+
+    ```bash
+    git clone https://github.com/Yonsei-HEP-COSMO/DeeLeMa.git
+    ```
+
+2. **Install Dependencies**: 
+   
+   Follow the [Requirements](#requirements) section for instructions.
+
+3. **Training**:
+   
+   To train the model, run the provided `train.py` script:
+
+    ```bash
+    python train.py
+    ```
+
+4. **Monitoring**:
+   
+   To monitor the training process, run `tensorboard`:
+
+    ```bash
+    tensorboard --logdir=logs/
+    ```
+
+    _Caution_: You should run tensorboard in activated virtual environment (venv).
+  
+    
 
 ## Citation
-If you use DeeLeMa in your research, please cite the following paper:
 
-```
+If DeeLeMa benefits your research, please acknowledge our efforts by citing the following paper:
+
+```bibtex
 @article{Ban:2022hfk,
     author = "Ban, Kayoung and Kang, Dong Woo and Kim, Tae-Geun and Park, Seong Chan and Park, Yeji",
     title = "{DeeLeMa: Missing Information Search with Deep Learning for Mass Estimation}",
@@ -56,4 +88,8 @@ If you use DeeLeMa in your research, please cite the following paper:
 
 ## Reference
 
-* K. Ban, D. W. Kang, T.-G Kim, S. C. Park and Y. Park,  *DeeLeMa: Missing Information Search with Deep Learning for Mass Estimation*, [arXiv:2212.12836](https://arxiv.org/abs/2212.12836)
+* K. Ban, D. W. Kang, T.-G Kim, S. C. Park, and Y. Park,  *DeeLeMa: Missing Information Search with Deep Learning for Mass Estimation*, [arXiv:2212.12836](https://arxiv.org/abs/2212.12836)
+
+## License
+
+DeeLeMa is released under the MIT License. For more details, see the `LICENSE` file in the repository.
