@@ -8,11 +8,11 @@
 
 DeeLeMa is a deep learning network designed to analyze energies and momenta in particle collisions at high-energy colliders. Built with a foundation on symmetric event topology, DeeLeMa's generated mass distributions demonstrate robust peaks at the physical masses, even after accounting for combinatoric uncertainties and detector smearing effects. With its adaptability to different event topologies, DeeLeMa's effectiveness shines when corresponding kinematic symmetries are adopted.
 
-
+DeeLeMa (v1.0.0) is based on the $t\bar{t}$-like antler event topology shown in the figure below.
 <p align="center" style="color:gray">
 <img src="https://github.com/Yonsei-HEP-COSMO/DeeLeMa/blob/main/img/topology.png?raw=true" width="350">
     <br>
-    <em>$t\bar{t}$-production-like antler event topology</em>
+    <m>$t\bar{t}$-production-like antler event topology</m>
 </p>
 
 ## Requirements
