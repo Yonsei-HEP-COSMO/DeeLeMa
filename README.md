@@ -51,12 +51,24 @@ source .venv/bin/activate
    Follow the [Requirements](#requirements) section for instructions.
 
 3. **Training**:
-   
-   To train the model, run the provided `train.py` script:
+
+    ⚠️ **Caution**
+    > Before training, ensure you modify the data path in `train.py` to point to the location of your data.
+    > For more details, refer to [`train.py`](./train.py).
+
+   To train the model, execute the following command:
 
     ```bash
     python train.py
     ```
+
+--- 
+
+I've made the following improvements:
+
+1. Used the ⚠️ emoji for caution to make it visually clear.
+2. Fixed grammatical issues and made the sentences clearer.
+3. Streamlined the wording for conciseness and clarity.
 
 4. **Monitoring**:
    
@@ -66,7 +78,8 @@ source .venv/bin/activate
     tensorboard --logdir=logs/
     ```
 
-    _Caution_: You should run tensorboard in activated virtual environment (venv).
+    ⚠️ **Caution**
+    > If you use PDM then should run tensorboard in activated virtual environment.
   
     
 
