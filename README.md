@@ -32,7 +32,7 @@ If you haven't installed `pdm` yet:
 curl -sSL https://pdm.fming.dev/install-pdm.py | python3 -
 
 # Windows
-(Invoke-WebRequest -Uri https://pdm.fming.dev/dev/install-pdm.py -UseBasicParsing).Content | python -
+(Invoke-WebRequest -Uri https://pdm.fming.dev/install-pdm.py -UseBasicParsing).Content | python -
 ```
 
 With PDM installed:
