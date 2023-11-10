@@ -2,7 +2,7 @@
 <img src="https://github.com/Yonsei-HEP-COSMO/DeeLeMa/blob/main/img/DeeLeMa.png?raw=true" width="300">
 </p>
 
-# $\textsf{DeeLeMa}$ (Deep Learning for Mass estimation)
+# DeeLeMa (Deep Learning for Mass estimation)
 
 ## Overview
 
