@@ -87,20 +87,21 @@ source .venv/bin/activate
 If $\textsf{DeeLeMa}$ benefits your research, please acknowledge our efforts by citing the following paper:
 
 ```bibtex
-@article{Ban:2022hfk,
+@article{Ban:2023mjy,
     author = "Ban, Kayoung and Kang, Dong Woo and Kim, Tae-Geun and Park, Seong Chan and Park, Yeji",
-    title = "{DeeLeMa: Missing Information Search with Deep Learning for Mass Estimation}",
-    eprint = "2212.12836",
-    archivePrefix = "arXiv",
-    primaryClass = "hep-ph",
-    month = "12",
-    year = "2022"
+    title = "{Missing information search with deep learning for mass estimation}",
+    doi = "10.1103/PhysRevResearch.5.043186",
+    journal = "Phys. Rev. Res.",
+    volume = "5",
+    number = "4",
+    pages = "043186",
+    year = "2023"
 }
 ```
 
 ## Reference
 
-* K. Ban, D. W. Kang, T.-G Kim, S. C. Park, and Y. Park,  *DeeLeMa: Missing Information Search with Deep Learning for Mass Estimation*, [arXiv:2212.12836](https://arxiv.org/abs/2212.12836)
+* K. Ban, D. W. Kang, T.-G Kim, S. C. Park, and Y. Park,  *Missing Information Search with Deep Learning for Mass Estimation*, [PhysRevResearch.5.043186](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.5.043186)
 
 ## License
 
