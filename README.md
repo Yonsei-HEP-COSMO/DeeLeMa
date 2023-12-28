@@ -23,23 +23,19 @@ The current version of $\textsf{DeeLeMa}$ (v1.0.0) is constructed on the $t\bar{
 pip3 install -r requirements.txt
 ```
 
-### Using PDM (Recommended)
+### Using Huak (Recommended)
 
-If you haven't installed `pdm` yet:
+If you haven't installed `huak` yet:
 
 ```bash
-# Linux / Mac
-curl -sSL https://pdm.fming.dev/install-pdm.py | python3 -
-
-# Windows
-(Invoke-WebRequest -Uri https://pdm.fming.dev/install-pdm.py -UseBasicParsing).Content | python -
+pip3 install huak
 ```
 
-With PDM installed:
+With Huak installed:
 
 ```bash
 # Install dependencies from pyproject.toml
-pdm install
+huak install
 
 # Activate virtual environment (venv)
 source .venv/bin/activate
@@ -78,7 +74,7 @@ source .venv/bin/activate
     ```
 
     ⚠️ **Caution**
-    > If you use PDM then should run tensorboard in activated virtual environment.
+    > If you use huak then should run tensorboard in activated virtual environment.
   
     
 
