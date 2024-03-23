@@ -40,3 +40,28 @@ def q_completion(q, x, m_C):
     qc2  = torch.cat([Eq2,qx2,qy2,qz2], 1)
     
     return torch.column_stack([qc1, qc2])
+
+def decoder(model, dl, m_C):
+    """
+    Decode the 4-momenta of the missing particles
+
+    Parameters
+    ----------
+    model : torch.nn.Module
+        The trained model
+    dl : torch.utils.data.DataLoader
+        DataLoader object
+    m_C : float
+        mass of the missing particle (predetermined)
+    """
+    model.eval()
+    with torch.no_grad():
+        dl_iter = iter(dl)
+        x_init, _, _ = next(dl_iter)
+        output = model(x_init)
+        q = q_completion(output, x_init, m_C)
+        for data in dl_iter:
+            x, _, _ = data
+            output = model(x)
+            q = torch.concat([q, q_completion(output, x, m_C)])
+    return q
