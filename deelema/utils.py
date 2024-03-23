@@ -41,7 +41,7 @@ def q_completion(q, x, m_C):
     
     return torch.column_stack([qc1, qc2])
 
-def decoder(model, dl, m_C):
+def decode_missing_momentum(model, dl, m_C):
     """
     Decode the 4-momenta of the missing particles
 
