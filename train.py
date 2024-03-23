@@ -27,7 +27,7 @@ def main():
     # Load data
     DATA_PATH = "data/"
     PROCESS = "toy"
-    
+
     # Load .npz file and split into individual numpy arrays
     np_data = np.load(DATA_PATH + PROCESS + ".npz")
 
