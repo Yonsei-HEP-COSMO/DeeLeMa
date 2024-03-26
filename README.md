@@ -80,24 +80,24 @@ source .venv/bin/activate
 
     - Load the saved checkpoint using the `load_from_checkpoint()` method:
 
-    ```python
-    checkpoint_path = "DeeLeMa_Toy.ckpt"
-    model = DeeLeMa.load_from_checkpoint(checkpoint_path)
-    ```
+      ```python
+      checkpoint_path = "DeeLeMa_Toy.ckpt"
+      model = DeeLeMa.load_from_checkpoint(checkpoint_path)
+      ```
 
     - Set the model to evaluation mode:
 
-    ```python
-    model.eval()
-    ```
+      ```python
+      model.eval()
+      ```
 
     - Use the loaded model for inference or further analysis:
 
-    ```python
-    from deelema.utils import decode_missing_momentum
+      ```python
+      from deelema.utils import decode_missing_momentum
 
-    output = decode_missing_momentum(model, dl_test, m_C) # m_C is the pre-determined mass
-    ```
+      output = decode_missing_momentum(model, dl_test, m_C) # m_C is the pre-determined mass
+      ```
 
 ## Citation
 
