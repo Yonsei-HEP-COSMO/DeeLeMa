@@ -75,8 +75,29 @@ source .venv/bin/activate
 
     ⚠️ **Caution**
     > If you use huak then should run tensorboard in activated virtual environment.
-  
-    
+
+5. **Testing**:
+
+    - Load the saved checkpoint using the `load_from_checkpoint()` method:
+
+    ```python
+    checkpoint_path = "DeeLeMa_Toy.ckpt"
+    model = DeeLeMa.load_from_checkpoint(checkpoint_path)
+    ```
+
+    - Set the model to evaluation mode:
+
+    ```python
+    model.eval()
+    ```
+
+    - Use the loaded model for inference or further analysis:
+
+    ```python
+    from deelema.utils import decode_missing_momentum
+
+    output = decode_missing_momentum(model, dl_test, m_C) # m_C is the pre-determined mass
+    ```
 
 ## Citation
 
@@ -97,7 +118,59 @@ If $\textsf{DeeLeMa}$ benefits your research, please acknowledge our efforts by 
 
 ## Reference
 
-* K. Ban, D. W. Kang, T.-G Kim, S. C. Park, and Y. Park,  *Missing Information Search with Deep Learning for Mass Estimation*, [PhysRevResearch.5.043186](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.5.043186)
+* K. Ban, D. W. Kang, T.-G. Kim, S. C. Park, and Y. Park,  *Missing Information Search with Deep Learning for Mass Estimation*, [PhysRevResearch.5.043186](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.5.043186)
+
+## License
+
+$\textsf{DeeLeMa}$ is released under the MIT License. For more details, see the `LICENSE` file in the repository.
+
+
+
+5. **Loading a Trained Model**:
+
+    - Load the saved checkpoint using the `load_from_checkpoint()` method:
+
+    ```python
+    checkpoint_path = "DeeLeMa_Toy.ckpt"
+    model = DeeLeMa.load_from_checkpoint(checkpoint_path)
+    ```
+
+    - Set the model to evaluation mode:
+
+    ```python
+    model.eval()
+    ```
+
+    - Use the loaded model for inference or further analysis:
+
+    ```python
+    predictions = []
+    with torch.no_grad():
+        for batch in dl_test:
+            outputs = model(batch)
+            predictions.append(outputs)
+    ```
+
+## Citation
+
+If $\textsf{DeeLeMa}$ benefits your research, please acknowledge our efforts by citing the following paper:
+
+```bibtex
+@article{Ban:2023mjy,
+  author = "Ban, Kayoung and Kang, Dong Woo and Kim, Tae-Geun and Park, Seong Chan and Park, Yeji",
+  title = "{Missing information search with deep learning for mass estimation}",
+  doi = "10.1103/PhysRevResearch.5.043186",
+  journal = "Phys. Rev. Res.",
+  volume = "5",
+  number = "4",
+  pages = "043186",
+  year = "2023"
+}
+```
+
+## Reference
+
+_K. Ban, D. W. Kang, T.-G. Kim, S. C. Park, and Y. Park,_ Missing Information Search with Deep Learning for Mass Estimation*, [PhysRevResearch.5.043186](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.5.043186)
 
 ## License
 
