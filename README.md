@@ -23,19 +23,22 @@ The current version of $\textsf{DeeLeMa}$ (v1.0.0) is constructed on the $t\bar{
 pip3 install -r requirements.txt
 ```
 
-### Using Huak (Recommended)
+### Using UV (Recommended)
 
-If you haven't installed `huak` yet:
+If you haven't installed `uv` yet:
 
 ```bash
-pip3 install huak
+pip3 install uv
 ```
 
-With Huak installed:
+With UV installed:
 
 ```bash
-# Install dependencies from pyproject.toml
-huak install
+# Create virtual environment (venv)
+uv venv
+
+# Sync dependencies
+uv sync requirements.txt
 
 # Activate virtual environment (venv)
 source .venv/bin/activate
