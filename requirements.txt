@@ -160,7 +160,7 @@ jupyterlab-server==2.27.2
     #   notebook
 kiwisolver==1.4.5
     # via matplotlib
-lightning==2.3.1
+lightning==2.3.2
 lightning-utilities==0.11.3.post0
     # via
     #   lightning
