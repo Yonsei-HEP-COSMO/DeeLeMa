@@ -406,7 +406,7 @@ torchmetrics==1.4.0.post0
     # via
     #   lightning
     #   pytorch-lightning
-tornado==6.4.1
+tornado==6.4.2
     # via
     #   ipykernel
     #   jupyter-client
