@@ -314,7 +314,7 @@ python-dateutil==2.9.0.post0
     #   pandas
 python-json-logger==2.0.7
     # via jupyter-events
-pytorch-lightning==2.3.1
+pytorch-lightning==2.4.0
     # via lightning
 pytz==2024.1
     # via pandas
