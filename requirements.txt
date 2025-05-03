@@ -82,7 +82,7 @@ gitpython==3.1.43
     # via wandb
 grpcio==1.64.1
     # via tensorboard
-h11==0.14.0
+h11==0.16.0
     # via httpcore
 httpcore==1.0.5
     # via httpx
